@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Impact';
+  src: url('/font/impact.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+
+  p {
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 30px 40px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Form */
+
+form {
+  width: 100%;
+}
+
+.form__row {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+  margin-bottom: 1rem;
+}
+
+.form__group {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+  }
+
+  input[type="text"] {
+    height: 50px;
+    padding: 1rem;
+    border: 0.82px solid #D1D5DB;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+}
+
+.form__row button {
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding-block: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Meme container */
+
+.meme-container {
+  position: relative;
+}
+
+.meme-text {
+  width: 100%;
+  font-size: 3rem;
+  position: absolute;
+  font-family: 'Impact';
+  font-style: normal;
+  font-weight: 900;
+  color: #FFFFFF;
+  -webkit-text-stroke: 2px black;
+}
+
+.meme-text--top {
+  top: 10px;
+  text-align: center;
+}
+
+.meme-text--bottom {
+  bottom: 10px;
+  text-align: center;
+}
